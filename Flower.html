@@ -1,0 +1,184 @@
+<! DOCTYPE html>
+	<html>
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+
+		/* Header/Blog Title */
+		.header {
+			padding: 30px;
+			text-align: center;
+			background-image: url(bunga1.jpg);
+		}
+
+		.header h1 {
+			font-size: 50px;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+		/* Style the tovnav links*/
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/*change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color : black;
+		}
+
+		/* create two unequal columnsthat that floats next to each other */
+		/* left column */
+		.leftcolum {
+			float: left;
+			width: 75%;
+		}
+		/* Right colum */
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		
+		/* Fake image */
+		.fakeimg {
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+		/* add a card effect for articles */
+		.card{
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+		/* Clear float after the columns */
+		.row::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/* Footer */
+		.footer{
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+
+		}
+		/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on topof each other instead of next to each other */
+		@media screen and (max-widht: 800px) {
+			.leftcolumn, .rightcolumn {
+				widht: 100%;
+				padding: 0;
+			}
+		}
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-widht: 400px){
+			.topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>My Website</h1>
+		<p>Resize the browser window to see the effect.</p>
+	</div>
+
+	<div class="topnav">
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#" style="float:right">Link</a>
+	</div>
+
+	<div class="row">
+		<div class="leftcolum">
+			<div class="card">
+				<h2>Bunga Matahari</h2>
+				<h5>06, Maret, 2007</h5>
+					<img src="BungaMatahari.jpg"height="500px"width="100%">
+				<p>Tentang Bunga Matahari</p>
+				<p> Bunga matahari (Helianthus annuus L.) adalah tumbuhan semusim dari suku kenikir-kenikiran (Asteraceae) yang populer, baik sebagai tanaman hias maupun tanaman penghasil minyak12. Bunga tumbuhan ini sangat khas: besar, biasanya berwarna kuning terang, dengan kepala bunga yang besar (diameter bisa mencapai 30 cm)1. Biji benihnya dapat dimakan sebagai makanan ringan atau ditekan menjadi minyak masak2.</p>
+			</div>
+			<div class="card">
+				<h2>Bunga Ros</h2>
+				<h5>21, Februari, 2007</h5>
+			<img src="BungaSakura.jpg"height="500px"width="100%">
+				<p>Tentang Bunga Sakura</p>
+				<p>Bunga sakura adalah bunga kecil berwarna merah muda lembut yang dihasilkan oleh pohon sakura. Mekar musim semi adalah tontonan yang mewah tetapi sangat singkat. Hanya sekitar dua minggu, sakura akan jatuh ke tanah dan layu. Sebagai bunga asli Asia, sakura juga dapat ditemukan di Cina, Korea Selatan, dan India.</p>
+			</div>
+			<div class="card">
+				<h2>Bunga Edelweis</h2>
+				<h5>18, Juni, 2007</h5>
+			<img src="BungaEdelweis.jpg"height="500px"width="100%">
+				<p>Tentang Bunga Edelweis</p>
+				<p>Edelweiss adalah bunga nasional Swiss dan sangat terkait dengan budaya Rumania, Austria, serta Italia. Bunga ini umumnya digambarkan dalam literatur dan seni sebagai muncul langsung dari batu gundul. Bunga edelweiss cenderung tumbuh di tanah berbatu dan berkapur di sekitar tepi padang rumput terbuka.</p>
+			</div>
+			<div class="card">
+				<h2>Bunga Tulip</h2>
+				<h5>18, Juni, 2007</h5>
+			<img src="BungaTulip1.jpg"height="500px"width="100%">
+				<p>Tentang Bunga Tulip</p>
+				<p>Tulip merupakan tumbuhan tahunan berumbi yang tingginya antara 10–70 cm, daunnya berlilin, berbentuk sempit memanjang berwarna hijau nuansa kebiru-biruan, dan bunganya berukuran besar terdiri 6 helai daun mahkota. Bunga ini pertama ditemukan di Turki.</p>
+			</div>
+			<div class="card">
+				<h2>Bunga Lavender</h2>
+				<h5>16, Desember, 2007</h5>
+			<img src="BungaLavender.jpg"height="500px"width="100%">
+				<p>Tentang Bunga Lavender</p>
+				<p>Bunga lavender termasuk bunga berukuran kecil. Bunganya terdiri dari serangkaian kuntum, jumlahnya terdiri dari 6 hingga 10 kuntum berbentuk spiral. Bunga lavender tumbuh di percabangan batang. Warnanya biru keunguan, namun lebih dominan ungu. Bunga ini memiliki bulu-bulu halus berwarna putih.</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>About Me</h2>
+				<img src="saya.png"height="300px"width="100%">
+				<p>Hallo!
+				   Perkenalkan nama saya Amila Miftahusyifa. Saya membuat website tentang macam-macam bunga. Saya berumur 17 tahun.  Saya bersekolah di SMKS Inovasi Mandiri. Alamat saya di Cangkuang, Darmaraja, Sumedang, Jawabarat, Indonesia. Saya mempunyai hobi yaitu salah satunya mencari tahu tentang macam-macam bunga. </p>
+				</div>
+			</div>
+			<div class="rightcolumn">
+			<div class="card">
+				<h3>Bunga-Bunga Asal Indonesia!</h3>
+				<div class="fakeimg">1. Bunga Rafflesia Arnoldi<img src="BungaRaflesia.jpg"height="150px"width="100%"></div>
+				<div class="fakeimg">2. Bunga Kantil/Cempaka Putih<img src="BungaKantil.jpg"height="150px"width="100%"></div>
+				<div class="fakeimg">3. Bunga Kamboja<img src="BungaKamboja.jpg"height="150px"width="100%"></div>
+				<div class="fakeimg">3. Bunga Jeumpa<img src="BungaJeumpaAceh.jpeg"height="150px"width="100%"></div>
+				<div class="fakeimg">4. Bunga Anggrek Bulan<img src="BungaAnggrekBulan.jpg"height="150px"width="100%"></div>
+			</div>
+			</div>
+			<div class="rightcolumn">
+			<div class="card">
+				<h3>Follow Me</h3>
+				<p>Website Untuk Mengenal Berbagai Jenis Bunga!!</p>
+				Social Media<img src="logo.jpg"height="250px"width="100%"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h2>coppyright &coppy; 2024 Amila Miftahusyifa, all right reserved.</h2>
+	</div>
+</body>
+</html>
